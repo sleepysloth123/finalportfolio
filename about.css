@@ -1,0 +1,365 @@
+
+/*
+RESET SETTINGS */
+
+/* set border-box (so that css uses a
+more reasonable box model, and so it’s
+like every other platform) */
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+
+/* get rid of default margins which
+vary depending on browser anyway, just
+set it yourself later*/
+* {
+    margin: 0;
+}
+
+    /* media elements are replaced elements
+which have a width based on the media,
+so we prevent it from expanding beyond
+its container, and take up a row */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    max-height:100%;
+}
+
+/* make tables look like spreadsheets
+and less like a spaced-out grid */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1{
+    font-size: 5rem;
+
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 1.8rem;
+    color: #000000;
+}
+
+a{
+    text-decoration: none;
+    font-family: omnes-pro, sans-serif;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    margin-right: 20px;
+
+
+    color: rgb(27, 35, 77);
+
+    -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+   
+}
+
+a:hover{
+    font-weight: 1500;
+    font-size: 1.1rem;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 1fr;
+
+
+    /* gets rid of horizontal scroll */
+    overflow-x: hidden;
+
+    font-family: omnes-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: #ffffff;
+
+}
+
+.navigation {
+    grid-column: 1;
+    grid-row: 1;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+
+    display: grid;
+    grid-template-columns: 10vw, 90vw;
+    grid-template-rows: 1fr;
+
+    
+
+
+
+    z-index: 999;
+    -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+}
+
+#navhome{
+    grid-row: 1;
+    grid-column: 1;
+    object-fit: contain;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+
+    padding-left: 60px;
+
+
+    user-drag: none;
+        -webkit-user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+
+}
+
+#navlinks{
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 70px;
+
+}
+
+.page {
+    grid-column: 1;
+    grid-row: 2;
+    height: 100%;
+    
+
+    /* display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh, 40vh, 40vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    /* grid-column: 1;
+    grid-row: 1; */
+    width: 100%;
+    
+    padding: 60px;
+    text-align: left;
+
+}
+
+.description{
+    width: 100%;
+    
+
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#description-text{
+
+    padding: 50px;
+    max-width: 40%;
+    margin-right: 150px;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #636363;
+}
+
+#description-img{
+    max-width: 30%;
+}
+
+
+
+.other{
+    /* grid-column: 1;
+    grid-row: 3; */
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact-card{
+    height: 350px;
+    width: 250px;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    /* border: 2px solid white; */
+
+
+    margin: 40px;
+
+
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr, 1fr;
+}
+
+.circle-img{
+    grid-row: 1;
+    grid-column: 1;
+    margin: auto;
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    overflow: hidden;
+    object-fit: cover;
+
+    background-color: white;
+    border: solid 4px white;
+}
+
+.fact-info{
+    grid-row:2;
+    grid-column: 1;
+
+    padding: 10px;
+
+    width: 100%;
+
+    text-align: center;
+
+}
+
+
+
+
+
+.learnbutton{
+    width: 50%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+
+    padding: 2px;
+    text-align: center;
+    color: rgb(53, 100, 93);
+    text-transform: uppercase;
+
+    text-decoration: none;
+    font-size: .6rem;
+    font-weight: bold;
+    font-family: omnes-pro, sans-serif;
+    letter-spacing: 1px;
+
+
+    cursor: pointer;
+
+    -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+}
+
+.learnbutton:hover{
+    background: none;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.learnbutton2{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border:none;
+
+    padding: 2px;
+    text-align: center;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+    font-size: .6rem;
+    font-weight: 1000;
+    font-family: omnes-pro, sans-serif;
+    letter-spacing: 1px;
+
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(78, 145, 127), rgb(105, 178, 186),rgb(126, 180, 219) );
+
+
+    cursor: pointer;
+
+    -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+}
+
+.learnbutton2:hover{
+    background: none;
+    color: #b2b2b2;
+
+    border: 2px solid #b2b2b2;
+}
+
+
+
+
+
+
+
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar-thumb:vertical {
+    background: var(--scrollBar);
+    border-radius: 15px;
+    height: 30%;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 5px;
+}
+
+
+
+

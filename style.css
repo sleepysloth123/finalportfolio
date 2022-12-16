@@ -58,7 +58,7 @@ h1{
     font-family: forma-djr-display, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: #ffffff;
+    color: #4e6c67;
 }
 
 h2{
@@ -67,12 +67,13 @@ h2{
     font-weight: 600;
     font-style: normal;
     letter-spacing: 1px;
+   
 
 }
 
 h3{
     font-size: 1.8rem;
-    color: #ffffff;
+    color: #b7b7b7;
 }
 
 a{
@@ -117,7 +118,7 @@ body {
     font-weight: 400;
     font-style: normal;
 
-    background-color: #ececec;
+    background-color: #ffffff;
 
 }
 
@@ -171,6 +172,22 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
 
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+
+}
+
+.headshot{
+    grid-column: 1;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    margin-left: 20px;
+
+}
+
+#headertext{
+    grid-column: 2;
 }
 
 .maincontainer{
@@ -183,9 +200,27 @@ body {
     padding-top: 100px;
 
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
+}
+
+.subheader{
+    width: 32%;
+    height: 50px;
+    border-radius: 120px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #A0ADA2;
+
+    font-family: forma-djr-display;
+    letter-spacing: 5px;
 }
 
 .cardcontainer{
@@ -197,7 +232,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: ;
+
 }
 
 /* adds space between flexbox items */
@@ -214,7 +249,8 @@ body {
     width: 55%;
     height: 500px;
     border-radius: 10px;
-    border: 5px solid #ffffff;
+    border: 5px solid #c5cfcb;
+    padding: 4px;
 
     background-color:  #ffffff;
     display: grid;
@@ -232,7 +268,8 @@ body {
     width: 40%;
     height: 500px;
     border-radius: 10px;
-    border: 5px solid #ffffff;
+    border: 5px solid #c5cfcb;
+    padding: 4px;
 
     color: #ffffff;
     text-shadow: 1px 1px 8px #555c6c;

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLEEPY SLOTH</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zgd4row.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rqr4kwv.css">
+
+
+
+</head>
+<body>
+    <div class="navigation">
+        <div id="navhome">
+             <a href="index.html"><img src="home.png" style="max-width: 40px; cursor: pointer"/></a>
+        </div>
+        <div id="navlinks">
+            <a href="index.html">PORTFOLIO</a>
+            <a href="about.html">ABOUT</a>
+        </div>
+    </div>
+    <div class="page">
+        <div class="header">
+            <div class="headertext">
+                <h1>BEARKERY: PRESERVING STATES IN<br> REACT</h1><br><br>
+                To familiarize myself with React and internal states, I created 
+                a web application modeling a bakery shop ordering page that has 
+                the capability of sorting items by feature, filtering items by 
+                category, as well as displaying a responsive cart that calculates 
+                the total price of the order. I made use of React states and 
+                components to achieve this, which allowed the web app to respond 
+                efficiently to user input and interactions. 
+
+
+            </div>
+            <img class="header" src="bearkeryheader.png"/>
+        </div>
+
+        <div class="container" style="background-color: #A4C4EA">
+            <div class="infoheader">
+                <img src="num1.png" class="num"/> 
+                <h3>state</h3>
+            </div>
+            <div class="infobox">
+                <div class="infobar"></div>
+                <div class="infotext">
+                    In React, properties are preserved through states and can be
+                     manipulated through setter objects. State maintains the status 
+                     of the bakery cart until an add/subtract button is pressed, 
+                     which appropriately increments or decrements the bakery cart 
+                     count according the state it was previously in. 
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="background-color: #87B1E2">
+            <div class="infoheader">
+                <img src="num1.png" class="num"/> 
+                <h3>components</h3>
+            </div>
+            <div class="infobox">
+                <div class="infobar"></div>
+                <div class="infotext">
+                    Components allow the programmer to render several identical 
+                    objects by passing in a set of data and allocating them to 
+                    various design elements. Rather than hard-coding each bakery 
+                    item to display, I rendered each element of a dataset of bakery 
+                    items to its own card by passing in data. As a result, I 
+                    could quickly edit the bakery items by editing the dataset 
+                    itself rather than HTML or CSS. 
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="background-color: #6995CA">
+            <div class="infoheader">
+                <img src="num1.png" class="num"/> 
+                <h3>sort/filter</h3>
+            </div>
+            <div class="infobox">
+                <div class="infobar"></div>
+                <div class="infotext">
+                    The sort/filter functions on datasets are adapted from 
+                    Javascript. This allows the user to both sort by a feature 
+                    that each bakery item possesses, as well as filter by categories 
+                    (dietary restrictions, allergies) that only certain items are part of. 
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="background-color: #49719F">
+            <div class="infoheader">
+                <img src="num1.png" class="num"/> 
+                <h3>mapping</h3>
+            </div>
+            <div class="infobox">
+                <div class="infobar"></div>
+                <div class="infotext">
+                    In the last step, I was able to “render”, or display the Bearkery 
+                    ordering page by mapping each component and any associated 
+                    datasets to the Document Object Model (DOM), which allows 
+                    the website to come to life. 
+
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTTOM CONTAINER -->
+        <div class="container" style="background-color: #fff; padding-bottom: 0px">
+            <img src="bearkerypreview.png" style="max-height: 60%"/>
+            <form action="https://sleepysloth123.github.io/reactdevelopment/" method="get" target="_blank">
+                <button type="submit" class="learnbutton2">LIVE PREVIEW</button>
+             </form>
+            <div class="infoborder">
+                <div class="infobar" style="background-color: #6995CA; width: 20px"></div>
+                <div class="infotext">
+                    This project was worthwhile in that it allowed me to explore 
+                    React and its capabilities. I learned the usefulness of state 
+                    in React, as well as the efficiency provided by rendering 
+                    components rather than individual items. I can now use these 
+                    tools to create responsive websites to user data and input. 
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <a href="kiwi.html">← KIWI PROTOTYPING</a>
+            <a href="sakura.html" id="portfoliolink">SAKURA REDESIGN →</a>
+        </div>
+
+        
+    </div>
+    
+
+   
+    
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>
